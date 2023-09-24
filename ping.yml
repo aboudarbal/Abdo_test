@@ -1,0 +1,7 @@
+---
+- name: Ping
+  hosts: all 
+  become: yes
+  tasks:
+  - name: Ping
+    shell: ls -lrt /tmp
