@@ -1,27 +1,39 @@
 ---
-- name: Afficher le nom de la machine, l'état de la mémoire et du CPU
+- name: Créer des dossiers et des fichiers
   hosts: all
   tasks:
-    - name: Obtenir le nom de la machine
-      command: hostname
-      register: hostname_output
+    - name: Créer le dossier "application"
+      ansible.builtin.file:
+        path: /chemin/vers/application
+        state: directory
+      become: yes
 
-    - name: Afficher le nom de la machine
-      debug:
-        var: hostname_output.stdout
+    - name: Créer le fichier "hello.sh" dans "application"
+      ansible.builtin.copy:
+        content: "#!/bin/bash\necho 'Hello from application folder'"
+        dest: /chemin/vers/application/hello.sh
+      become: yes
 
-    - name: Obtenir l'état de la mémoire
-      shell: free -m
-      register: memory_output
+    - name: Créer le dossier "image"
+      ansible.builtin.file:
+        path: /chemin/vers/image
+        state: directory
+      become: yes
 
-    - name: Afficher l'état de la mémoire
-      debug:
-        var: memory_output.stdout
+    - name: Créer le fichier "hello.sh" dans "image"
+      ansible.builtin.copy:
+        content: "#!/bin/bash\necho 'Hello from image folder'"
+        dest: /chemin/vers/image/hello.sh
+      become: yes
 
-    - name: Obtenir l'état du CPU
-      shell: top -n 1 -b
-      register: cpu_output
+    - name: Créer le dossier "AP"
+      ansible.builtin.file:
+        path: /chemin/vers/AP
+        state: directory
+      become: yes
 
-    - name: Afficher l'état du CPU
-      debug:
-        var: cpu_output.stdout
+    - name: Créer le fichier "hello.sh" dans "AP"
+      ansible.builtin.copy:
+        content: "#!/bin/bash\necho 'Hello from AP folder'"
+        dest: /chemin/vers/AP/hello.sh
+      become: yes
