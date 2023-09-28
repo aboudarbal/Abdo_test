@@ -1,30 +1,11 @@
 ---
-
-- name: Récupérer la configuration du serveur
+- name: Afficher le nom de la machine
   hosts: all
-  gather_facts: yes
   tasks:
-    - name: Afficher les informations CPU
-      command: "lscpu"
-      register: cpu_info
+    - name: Obtenir le nom de la machine
+      command: hostname
+      register: hostname_output
 
-    - name: Afficher les informations RAM
-      command: "free -m"
-      register: ram_info
-
-    - name: Afficher les informations sur les disques
-      command: "df -h"
-      register: disk_info
-
-    - name: Afficher les informations sur le système de fichiers
-      command: "lsblk"
-      register: filesystem_info
-
-    - name: Afficher les résultats
+    - name: Afficher le nom de la machine
       debug:
-        var: item.stdout
-      with_items:
-        - "{{ cpu_info }}"
-        - "{{ ram_info }}"
-        - "{{ disk_info }}"
-        - "{{ filesystem_info }}"
+        var: hostname_output.stdout
