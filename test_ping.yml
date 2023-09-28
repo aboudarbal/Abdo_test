@@ -1,5 +1,5 @@
 ---
-- name: Afficher le nom de la machine
+- name: Afficher le nom de la machine, l'état de la mémoire et du CPU
   hosts: all
   tasks:
     - name: Obtenir le nom de la machine
@@ -9,3 +9,19 @@
     - name: Afficher le nom de la machine
       debug:
         var: hostname_output.stdout
+
+    - name: Obtenir l'état de la mémoire
+      shell: free -m
+      register: memory_output
+
+    - name: Afficher l'état de la mémoire
+      debug:
+        var: memory_output.stdout
+
+    - name: Obtenir l'état du CPU
+      shell: top -n 1 -b
+      register: cpu_output
+
+    - name: Afficher l'état du CPU
+      debug:
+        var: cpu_output.stdout
