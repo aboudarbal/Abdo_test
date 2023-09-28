@@ -1,8 +1,30 @@
 ---
-- name: ping module demo
-  hosts: all
-  become: false
 
+- name: Récupérer la configuration du serveur
+  hosts: all
+  gather_facts: yes
   tasks:
-    - name: test connection
-      ansible.builtin.ping:
+    - name: Afficher les informations CPU
+      command: "lscpu"
+      register: cpu_info
+
+    - name: Afficher les informations RAM
+      command: "free -m"
+      register: ram_info
+
+    - name: Afficher les informations sur les disques
+      command: "df -h"
+      register: disk_info
+
+    - name: Afficher les informations sur le système de fichiers
+      command: "lsblk"
+      register: filesystem_info
+
+    - name: Afficher les résultats
+      debug:
+        var: item.stdout
+      with_items:
+        - "{{ cpu_info }}"
+        - "{{ ram_info }}"
+        - "{{ disk_info }}"
+        - "{{ filesystem_info }}"
