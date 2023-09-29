@@ -1,6 +1,6 @@
 ---
 - name: Display Server Configuration
-  hosts: your_server_group
+  hosts: all
   gather_facts: yes
   tasks:
     - name: Gather server facts
