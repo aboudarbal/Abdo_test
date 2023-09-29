@@ -1,10 +1,21 @@
 ---
-- name: Ping and Display Server Name and Domain
-  hosts: all
+- name: Display Server Configuration
+  hosts: your_server_group
+  gather_facts: yes
   tasks:
-    - name: Ping servers
-      ping:
+    - name: Gather server facts
+      ansible.builtin.setup:
 
-    - name: Display Server Name and Domain
+    - name: Display server configuration
       debug:
-        var: ansible_fqdn
+        msg: 
+          - "Hostname: {{ ansible_hostname }}"
+          - "CPU Cores: {{ ansible_processor_cores }}"
+          - "Total RAM: {{ ansible_memory_mb.real.total }}"
+          - "Disk Space:"
+            - "Root:"
+              - "Size: {{ ansible_mounts[0].size_total }}"
+              - "Used: {{ ansible_mounts[0].size_total - ansible_mounts[0].size_available }}"
+            - "Other Mount Points:"
+              - "Size: {{ ansible_mounts[1].size_total }}"
+              - "Used: {{ ansible_mounts[1].size_total - ansible_mounts[1].size_available }}"
