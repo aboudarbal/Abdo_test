@@ -1,6 +1,6 @@
 ---
 - name: Ping and Display Server Name and Domain
-  hosts: your_server_group
+  hosts: all
   tasks:
     - name: Ping servers
       ping:
