@@ -1,7 +1,10 @@
 ---
-- name: Ping
-  hosts: all 
-  become: yes
+- name: Ping and Display Server Name and Domain
+  hosts: your_server_group
   tasks:
-  - name: Ping
-    shell: ls -lrt /tmp
+    - name: Ping servers
+      ping:
+
+    - name: Display Server Name and Domain
+      debug:
+        var: ansible_fqdn
