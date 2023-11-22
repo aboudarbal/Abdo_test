@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Répertoire contenant les fichiers sur lesquels exécuter le script
+repertoire="/chemin/vers/le/repertoire"
+
+# Chemin vers le script que vous souhaitez exécuter
+script="/chemin/vers/votre/script.sh"
+
+# Boucle parcourant tous les fichiers du répertoire
+for fichier in "$repertoire"/*
+do
+    # Vérifie si le fichier est un fichier ordinaire
+    if [ -f "$fichier" ]; then
+        # Exécute le script sur le fichier actuel
+        "$script" "$fichier"
+    fi
+done
+..............
