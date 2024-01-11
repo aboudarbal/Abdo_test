@@ -1,0 +1,1 @@
+kubectl get events --field-selector involvedObject.name=<nom-du-job> --sort-by='.lastTimestamp'
