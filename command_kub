@@ -1,0 +1,69 @@
+Kubernetes, souvent abrégé en "k8s", est un système open-source pour automatiser le déploiement, la mise à l'échelle et la gestion des applications conteneurisées. Voici quelques commandes de base pour interagir avec Kubernetes en utilisant l'outil en ligne de commande kubectl :
+
+Vérifier la version de kubectl :
+
+bash
+Copy code
+kubectl version
+Lister les nœuds du cluster :
+
+bash
+Copy code
+kubectl get nodes
+Lister les pods dans tous les namespaces :
+
+bash
+Copy code
+kubectl get pods --all-namespaces
+Décrire un pod spécifique :
+
+bash
+Copy code
+kubectl describe pod <nom-du-pod>
+Lancer un fichier de configuration YAML ou JSON :
+
+bash
+Copy code
+kubectl apply -f <fichier-de-configuration.yaml>
+Exécuter une commande dans un conteneur en cours d'exécution :
+
+bash
+Copy code
+kubectl exec -it <nom-du-pod> -- <commande>
+Afficher les journaux d'un conteneur dans un pod :
+
+bash
+Copy code
+kubectl logs <nom-du-pod>
+Mettre à l'échelle le nombre de répliques d'un déploiement :
+
+bash
+Copy code
+kubectl scale deployment <nom-du-deploiement> --replicas=<nombre-de-replicas>
+Supprimer un déploiement, un service ou un pod :
+
+bash
+Copy code
+kubectl delete deployment <nom-du-deploiement>
+kubectl delete service <nom-du-service>
+kubectl delete pod <nom-du-pod>
+Exposer un service :
+
+bash
+Copy code
+kubectl expose deployment <nom-du-deploiement> --port=<port-externe> --type=NodePort
+Ces commandes ne représentent qu'un ensemble de fonctionnalités de base. Pour des tâches plus avancées ou spécifiques, vous pouvez consulter la documentation officielle de Kubernetes et de kubectl : Documentation Kubernetes, kubectl Cheat Sheet.
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  
+Pour afficher les schedules des jobs dans Kubernetes, vous pouvez utiliser la commande suivante avec kubectl :
+
+bash
+Copy code
+kubectl get cronjobs
+Cette commande liste tous les cron jobs (jobs planifiés) dans le cluster Kubernetes, avec des détails tels que leur nom, l'âge, et l'horaire de planification. Si vous souhaitez obtenir plus de détails sur un cron job spécifique, vous pouvez utiliser la commande kubectl describe cronjob suivie du nom du cron job, par exemple :
+
+bash
+Copy code
+kubectl describe cronjob <nom-du-cronjob>
+Cela affichera des informations détaillées sur le cron job, y compris son horaire de planification, la dernière heure d'exécution, etc. Assurez-vous de remplacer <nom-du-cronjob> par le nom réel du cron job que vous souhaitez inspecter.
