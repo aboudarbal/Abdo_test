@@ -5,3 +5,5 @@ De notre côté, il n'est pas envisageable de modifier les scripts sur tous les 
 À titre informatif, le changement devra être effectué après le 05/02, en raison du gel de fin du mois.
 
 Restant à votre disposition pour toute clarification nécessaire.
+
+Get-NetTCPConnection -State Listen | Where-Object { $_.LocalPort -eq 1521 }
