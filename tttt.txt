@@ -7,3 +7,7 @@ De notre côté, il n'est pas envisageable de modifier les scripts sur tous les 
 Restant à votre disposition pour toute clarification nécessaire.
 
 Get-NetTCPConnection -State Listen | Where-Object { $_.LocalPort -eq 1521 }
+
+
+
+sudo find /etc/ssl/certs -type f -exec openssl x509 -in {} -outform der | openssl base64 -A -w 0 \;
