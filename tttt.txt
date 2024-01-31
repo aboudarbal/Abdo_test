@@ -11,3 +11,11 @@ Get-NetTCPConnection -State Listen | Where-Object { $_.LocalPort -eq 1521 }
 
 
 sudo find /etc/ssl/certs -type f -exec openssl x509 -in {} -outform der | openssl base64 -A -w 0 \;
+
+
+
+J'espère que ce message vous trouve bien. Suite à la création d'une demande de changement standard, une tâche a été automatiquement générée, mais je rencontre des difficultés à ajouter une autre tâche dédiée aux tests métier.
+
+Pourriez-vous s'il vous plaît vérifier la template standard utilisée et m'indiquer si des ajustements sont nécessaires de votre côté ? Je me tiens à votre disposition pour organiser un point de discussion afin de clarifier la situation et de trouver une solution appropriée.
+
+Je vous remercie par avance pour votre attention à cette demande et reste à votre disposition pour toute information complémentaire.
