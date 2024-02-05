@@ -5,3 +5,28 @@ De plus, des demandes de changements ont été créées et sont planifiées à p
 Nous comprenons l'importance de votre validation et nous restons à votre disposition pour toute question ou clarification nécessaire. Votre réactivité dans les plus brefs délais serait grandement appréciée afin d'assurer le succès de cette transition.
 
 Nous vous remercions par avance pour votre compréhension et votre coopération.
+,.........
+
+Transfeier...
+
+01/02/2024 18:07
+
+11:27
+
+Interne
+
+Cc: DUVEKNOIS Guritaume <guillaume.duvernois@inpparibas.com>; OUCHE Christophe Christophe,oucher@wonppandas.com>; HINA Jonathan jonathan.penaltinppannas.como Objet: RE: [Obsolescence] Migration chart backend 1.0.2
+
+Bonjour,
+
+jeu. 01/02
+
+Suite à nos précédents échanges, je tenais à vous informer qu'à ce jour, nous n'avons pas encore reçu de retour de votre part pour valider le bon fonctionnement de votre application sur la Qualification dans le cadre de la campagne de migration de la chart Spring 1.0.9 vers la chart Batkend 1.0.2.
+
+jeu. 01/02
+
+De plus, des demandes de changements ont été créées sous le numéro "CHG0659672 et CHG0659682" et sont planifiées à partir du 12/02 en vue de déployer sur les environnements de production. Sans aucun retour de votre part, nous sommes dans l'obligation de déployer sur la production.
+
+Nous restons à votre disposition pour complément d'information.
+
+Nous vous remercions par avance pour votre compréhension.
