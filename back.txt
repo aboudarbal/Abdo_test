@@ -1,4 +1,4 @@
-J'espère que ce message vous trouve bien. Suite à nos précédents échanges, je tenais à vous informer qu'à ce jour, nous n'avons pas encore reçu de retour de votre part pour valider le bon fonctionnement de votre application dans le cadre de la campagne de migration de la chart Spring 1.0.9 vers la chart Backend 1.0.2.
+deJ'espère que ce message vous trouve bien. Suite à nos précédents échanges, je tenais à vous informer qu'à ce jour, nous n'avons pas encore reçu de retour de votre part pour valider le bon fonctionnement de votre application dans le cadre de la campagne de migration de la chart Spring 1.0.9 vers la chart Backend 1.0.2.
 
 De plus, des demandes de changements ont été créées et sont planifiées à partir du 12/02 en vue d'un déploiement sur les environnements de production. Malheureusement, sans aucun retour de votre part, nous sommes dans l'obligation de vous informer que le déploiement sera lancé sur la production conformément à notre planning établi.
 
@@ -30,3 +30,10 @@ De plus, des demandes de changements ont été créées sous le numéro "CHG0659
 Nous restons à votre disposition pour complément d'information.
 
 Nous vous remercions par avance pour votre compréhension.
+
+
+
+
+Bonjour Kamal,
+
+Nous n'avons constaté aucun incident sur l'environnement de Qualif Mon Entretien qui puisse être en lien avec la montée de version de la charte Heim. Donc tu as notre Go pour le déploiement en Production prévu le 12/02.
