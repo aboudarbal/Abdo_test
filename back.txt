@@ -1,3 +1,1 @@
-Je vous remercie pour votre retour rapide et votre confirmation favorable quant au déploiement de la nouvelle version de la charte helm et Nous sommes ravis de savoir qu'aucun incident n'a été constaté jusqu'à présent.
-Afin de garantir un déploiement en toute fluidité, pourriez-vous me communiquer un contact afin de planifier les tests de production ?
-Je vous remercie par avance pour votre collaboration et je reste à votre disposition pour toute information complémentaire.
+Depuis la mise à jour de l'image httpd 2.4.58, nous rencontrons des difficultés à déployer tous nos builds Jenkins qui utilisent cette version dans la Dmzr (via C3PO). Le souci semble survenir lors du déploiement du conteneur. J'ai réalisé des tests sur deux applications Angular distinctes, et les deux rencontrent le même problème
