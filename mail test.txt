@@ -1,0 +1,3 @@
+Je tiens à vous informer que le déploiement s’est bien déroulé sans impact. Pourriez-vous tester la qualification et nous faire un retour afin que nous puissions procéder à l’environnement de production la semaine prochaine ?
+
+Merci d’avance pour votre collaboration.
