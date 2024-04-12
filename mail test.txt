@@ -1,3 +1,27 @@
 Je tiens à vous informer que le déploiement s’est bien déroulé sans impact. Pourriez-vous tester la qualification et nous faire un retour afin que nous puissions procéder à l’environnement de production la semaine prochaine ?
 
 Merci d’avance pour votre collaboration.
+
+'''''
+
+Bien sûr, voici un brouillon de mail professionnel que vous pouvez utiliser pour informer vos collègues du déploiement :
+
+---
+
+**Objet : Mise à jour du déploiement des modules**
+
+Chers collègues,
+
+Je tiens à vous informer que le déploiement s'est bien déroulé sur **95 % des modules**. Cependant, nous avons rencontré des problèmes avec **5 modules** qui sont actuellement en état **KO**. Les déploiements sont bloqués sur **CT3PP** en raison d'images obsolètes.
+
+Je vous prie de bien vouloir planifier les déploiements en **hors production** et en **production** pour ces modules en utilisant une **image à jour**. Cela devrait résoudre les problèmes que nous rencontrons actuellement.
+
+N'hésitez pas à me contacter si vous avez besoin de plus d'informations.
+
+Cordialement,
+
+[Votre nom]
+
+---
+
+J'espère que cela vous aidera dans votre communication professionnelle ! Si vous avez besoin d'autres modifications ou d'ajustements, n'hésitez pas à me le faire savoir. 😊
