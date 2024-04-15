@@ -37,3 +37,6 @@ Je vous écris pour vous informer que dans le cadre de notre gestion des obsoles
 Je prévois de lancer le déploiement de ces modules dès la semaine prochaine. Nous resterons bien sûr disponibles pour toute assistance nécessaire pendant cette période de transition.
 
 N'hésitez pas à me contacter si vous avez des questions ou des préoccupations à ce sujet.
+
+
+Pourriez-vous s'il vous plaît vérifier votre environnement qualité et nous communiquer un créneau cette semaine ou la semaine prochaine pour lancer la production ?
